@@ -89,7 +89,7 @@ _.extend(Renderer.prototype, rawRenderer.prototype, {
 	}
 	, code: function(code, lang) {
 		lang = langMap[lang] || langMap[langArr[0]]
-		return '{code:' + lang + '}\n' + code + '\n{code}\n\n'
+		return '{code:' + lang + '|linenumbers=true}\n' + code + '\n{code}\n\n'
 	}
 })
 
